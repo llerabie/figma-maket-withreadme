@@ -20,16 +20,47 @@ nav{
   display: inline-flex;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  letter-spacing: 1px;
 }
 .menu-item-main{
   list-style: none;
   color: rgb(31, 32, 65);
+  font-weight: 600;
 }
 .menu-item{
   list-style: none;
   padding-left: 20px;
   color: rgba(31, 32, 65,.25);
+  font-weight: 500;
+}
+.btn-login{
+  width: 87px;
+  height: 34px;
+  border-radius: 22px;
+  border: 2px solid  #BC9CFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  background-color: #FFFFFF;
+}
+
+.btn-registration{
+  width: 196px;
+  height: 34px;
+  border-radius: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  color: #FFFFFF;
+}
+/*стили для основного контента landing-page*/
+.container-center{
+  background-image: url(img/bg-landing-page.png);
 }
