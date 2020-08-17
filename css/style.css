@@ -1,1 +1,35 @@
-rfrffrfs
+body{
+  margin: auto;
+}
+/* стили для header сайта */
+.container-header{
+  width: 860px;
+  margin: 0 auto;
+}
+.logo{
+  display: inline-flex;
+  padding: 28.33px 0 28.72px 0;
+}
+.logo-img{
+  padding-right: 12.5px;
+}
+nav{
+  display: inline-flex;
+}
+.menu{
+  display: inline-flex;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+.menu-item-main{
+  list-style: none;
+  color: rgb(31, 32, 65);
+}
+.menu-item{
+  list-style: none;
+  padding-left: 20px;
+  color: rgba(31, 32, 65,.25);
+}
