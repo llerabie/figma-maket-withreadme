@@ -62,5 +62,78 @@ nav{
 }
 /*стили для основного контента landing-page*/
 .container-center{
-  background-image: url(img/bg-landing-page.png);
+  background: url(../img/bg-landing-page.png);
+  height: 1022px;
+
 }
+.container-center-card{
+  width: 380px;
+  margin-left: 187px;
+  height: 374px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.container-center-card h1{
+  width: 320px;
+  margin: 40px 30px 0px 30px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+.container-center-card-p{
+  display: inline-flex;
+  padding-left: 30px;
+}
+.container-center-card p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  padding-right: 20px;
+  font-size: 12px;
+  line-height: 15px;
+/* identical to box height */
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.calendar{
+  width: 150px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65,.25);
+}
+.container-center-card				nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+.container-center-card				nav ul li a{
+  text-decoration: none;
+}
+.container-center-card			nav ul ul {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+			}
+.container-center-card			nav ul li:hover > ul {
+			    display:inherit;
+			}
+
+			/* первый уровень выпадающего списка */
+.container-center-card			nav ul ul li {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}
