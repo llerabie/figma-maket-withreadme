@@ -23,16 +23,18 @@ nav{
   font-size: 14px;
   letter-spacing: 1px;
 }
-.menu-item-main{
-  list-style: none;
-  color: rgb(31, 32, 65);
-  font-weight: 600;
-}
+
 .menu-item{
   list-style: none;
   padding-left: 20px;
-  color: rgba(31, 32, 65,.25);
   font-weight: 500;
+}
+.menu-item a{
+  text-decoration: none;
+  color: rgba(31, 32, 65,.25);
+}
+.menu-item a:hover{
+    color: rgb(31, 32, 65);
 }
 .btn-login{
   width: 87px;
