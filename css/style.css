@@ -1,17 +1,27 @@
+
 body{
   margin: auto;
+  width: 1440px;
 }
 /* стили для header сайта */
 .container-header{
-  width: 860px;
+  width: 1160px;
+  height: 70px;
   margin: 0 auto;
 }
 .logo{
   display: inline-flex;
-  padding: 28.33px 0 28.72px 0;
+  align-items: center;
+  padding-top: 15px;
+
 }
 .logo-img{
   padding-right: 12.5px;
+  width: 40px;
+}
+.logo-toxin{
+  width: 53.19px;
+  height: 12.95px;
 }
 nav{
   display: inline-flex;
