@@ -81,6 +81,7 @@ nav{
   position:relative;
   width: 196px;
   height: 34px;
+  border: none;
   border-radius: 22px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -95,10 +96,12 @@ nav{
 /*стили для основного контента landing-page*/
 .container-center{
   background: url(../img/bg-landing-page.png);
-  height: 1022px;
+  height: 830px;
 
 }
 .container-center-card{
+  position: relative;
+  top: 70px;
   width: 380px;
   margin-left: 187px;
   height: 374px;
@@ -124,11 +127,10 @@ nav{
 }
 .container-center-card p{
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: bold;
   padding-right: 20px;
   font-size: 12px;
   line-height: 15px;
-/* identical to box height */
   text-transform: uppercase;
   color: #1F2041;
 }
@@ -144,28 +146,96 @@ nav{
   text-transform: uppercase;
   color: rgba(31, 32, 65,.25);
 }
-.container-center-card				nav ul {
-			    padding:0;
-			    margin:0;
-			    list-style: none;
-			    position: relative;
-			    }
-.container-center-card				nav ul li a{
-  text-decoration: none;
+.container-center-cart-gost{
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
 }
-.container-center-card			nav ul ul {
-			    display: none;
-			    position: absolute;
-			    top: 100%;
-			}
-.container-center-card			nav ul li:hover > ul {
-			    display:inherit;
-			}
+.menu-guest-nav{
+  width: 320px;
+  height: 44px;
+  margin: 0 auto;
+}
 
-			/* первый уровень выпадающего списка */
-.container-center-card			nav ul ul li {
-			    min-width:170px;
-			    float:none;
-			    display:list-item;
-			    position: relative;
-			}
+.menu-guest li{
+  list-style: none;
+
+}
+.menu-guest-nav > ul > li{
+ float: left;
+ width: 320px;
+ position: relative;
+}
+.menu-guest-nav li a{
+ display: block;
+ border: 1px solid rgba(31, 32, 65, 0.25);
+ border-radius: 4px;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 700;
+ font-size: 12px;
+ line-height: 15px;
+ color: rgba(31, 32, 65,.75);
+ text-decoration: none;
+}
+.menu-guest-nav li .menu-guest-item{
+ display: none;
+ position: absolute;
+ top: 100%;
+}
+.menu-guest-nav li:hover .menu-guest-item{
+ display: block;
+}
+.container-center-card-btn{
+  width: 320px;
+  height: 44px;
+  position: relative;
+  left: 30px;
+  border-radius: 22px;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border: none;
+
+  text-transform: uppercase;
+}
+.img-arrow{
+  float: right;
+  text-align: center;
+  margin-right: 5px;
+}
+.container-center-p{
+  width: 297px;
+  height: 48px;
+  position: absolute;
+  left: 1009px;
+  top: 834px;
+}
+.container-center-p p{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*Стили для footer*/
+.menu-footer-nav{
+ height: 70px;
+}
+.menu-footer-nav ul{
+ list-style: none;
+}
+.menu-footer-nav > ul > li{
+ float: left;
+ width: 180px;
+ position: relative;
+}
