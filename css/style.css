@@ -23,8 +23,14 @@ body{
   width: 53.19px;
   height: 12.95px;
 }
+.clear{
+  clear: both;
+}
 nav{
   display: inline-flex;
+  position: relative;
+  bottom: 16px;
+  margin-left: 225.31px;
 }
 .menu{
   display: inline-flex;
