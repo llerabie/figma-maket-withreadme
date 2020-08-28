@@ -4,6 +4,30 @@
     <meta charset="utf-8">
     <title> TOXIN </title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+/* Локализация datepicker */
+    $.datepicker.regional['ru'] = {
+    	closeText: 'Закрыть',
+    	prevText: 'Предыдущий',
+    	nextText: 'Следующий',
+    	currentText: 'Сегодня',
+    	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+    	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+    	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    	weekHeader: 'Не',
+    	dateFormat: 'dd.mm.yy',
+    	firstDay: 1,
+    	isRTL: false,
+    	showMonthAfterYear: false,
+    	yearSuffix: ''
+      };
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+    </script>
   </head>
   <body>
     <header>
@@ -30,25 +54,24 @@
         <div class="container-center-card">
           <h1> Найдём номера под <br>ваши пожелания</h1>
           <div class="container-center-card-p">
-          <p>Прибытие: <br> <input type="date" name="calendar" class="calendar" > </p>
-          <p>Выезд: <br> <input type="date" name="calendar" class="calendar"> </p>
+          <p>Прибытие: <br>   <input type="text" id="datepicker1" class="datepicker" placeholder="Сколько гостей">
+                <script>
+                $(function(){
+                	$("#datepicker1").datepicker();
+                });
+                </script> </p>
+          <p>Выезд: <br>   <input type="text" id="datepicker2"  class="datepicker" placeholder="Сколько гостей">
+                <script>
+                $(function(){
+                	$("#datepicker2").datepicker();
+                });
+                </script> </p>
           </div>
           <div class="container-center-cart-gost"
           <p> Гости </p>
         </div>
         <div class="clear"> </div>
-        <nav class="menu-guest-nav">
-            <ul class="menu-guest">
-                <li><a href="#"> Сколько гостей </a>
-              <ul>
-                <li class="menu-guest-item"><a href="#"> Взрослые </a></li>
-                <li class="menu-guest-item"><a href="#"> Дети </a> </li>
-                <li class="menu-guest-item"><a href="#"> Младенцы </a></li>
-                <!--<input type="submit" name="btn-clean" class="calendar" ><input type="submit" name="btn-submit" class="calendar" >-->
-              </ul>
-              </li>
-            </ul>
-        </nav>
+
           <button class="container-center-card-btn"> Подобрать номер <img src="img-svg/arrow_forward.svg" alt="" class="img-arrow"></button>
         </div>
         <div class="container-center-p">
